@@ -20,7 +20,7 @@ module.exports = {
             'med-blue': 'rgb(45, 56, 131)',
             'light-blue': 'rgb(68, 83, 184)',
             'light-orange': 'rgb(255, 216, 126)',
-            'off-black': 'rgb(30,30,30)',
+            'off-black': 'rgb(67,65,65)',
             'off-white': 'rgb(176, 187, 197)',
             'white': '#FFFFFF',
         },

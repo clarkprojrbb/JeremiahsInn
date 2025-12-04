@@ -17,13 +17,12 @@ function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const navItems = [
-        { name: 'Home', path: '/' },
+        { name: 'Home', path: '/'},
         { name: 'About Us', path: '/about' },
         { name: 'Programs', path: '/programs' },
-        { name: 'News & Events', path: '/events' },
-        { name: 'Our Mission', path: '/mission' },
+        { name: 'Get Involved', path: '/donate' },
         { name: 'Contact Us', path: '/contact' },
-        { name: 'Donate', path: '/donate' },
+        { name: 'News & Events', path: '/events' },
     ];
 
     return (
@@ -50,7 +49,7 @@ function Header() {
                                     className="inline-block rounded-full px-2
             border-2 border-dark-blue bg-dark-blue text-base font-bold
             text-white transition duration-300
-                                    hover:bg-off-white hover:text-dark-blue hover:border-dark-blue
+            hover:bg-off-white hover:text-dark-blue hover:border-dark-blue
             shadow-lg hover:shadow-xl transform hover:scale-[1.02]"
                                 >
                                     {item.name}
