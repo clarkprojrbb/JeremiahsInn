@@ -12,18 +12,33 @@ import { Link } from "react-router-dom";
 //     );
 // }
 
-function Header() {
-    // State to handle the mobile menu collapse/expand
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+const involvedSubItems = [
+    { name: 'Donate', description: 'Make a financial contribution to support our mission.', path: '/donate' },
+    { name: 'Partner', description: 'Explore business and organizational partnerships.', path: '/partner' },
+    { name: 'Volunteer', description: 'Give your time to directly support our programs.', path: '/volunteer' },
+];
 
-    const navItems = [
-        { name: 'Home', path: '/'},
-        { name: 'About Us', path: '/about' },
-        { name: 'Programs', path: '/programs' },
-        { name: 'Get Involved', path: '/donate' },
-        { name: 'Contact Us', path: '/contact' },
-        { name: 'News & Events', path: '/events' },
-    ];
+const navItems = [
+    { name: 'Home', path: '/'},
+    { name: 'About Us', path: '/about' },
+    { name: 'Programs', path: '/programs' },
+    {
+        name: 'Get Involved',
+        path: '#',
+        type: 'dropdown',
+        subItems: involvedSubItems
+    },
+    { name: 'Contact Us', path: '/contact' },
+    { name: 'News & Events', path: '/events' },
+];
+
+function Header() {
+
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const navButtonClass = "inline-flex items-center rounded-full px-3 py-1 border-2 border-dark-blue bg-dark-blue text-base font-bold text-white transition duration-300 hover:bg-off-white hover:text-dark-blue hover:border-dark-blue shadow-lg hover:shadow-xl transform hover:scale-[1.02] whitespace-nowrap";
+    const mobileLinkClass = "block w-full text-left px-3 py-2 text-base font-medium text-white hover:bg-blue-800 rounded-md transition duration-150 ease-in-out";
+
 
     return (
         <header className="bg-dark-blue shadow-lg font-sans">

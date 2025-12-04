@@ -21,10 +21,15 @@ export const Footer = () => {
                             src="/logo_full_transparent.png"
                         />
                         <div>
-                            <p className="font-semibold tracking-wide text-white">
-                                About Us
-                            </p>
                             <ul className="mt-2 space-y-2">
+                                <li>
+                                    <a
+                                        href="/about"
+                                        className="transition-colors duration-300 text-white hover:text-off-white"
+                                    >
+                                        About Us
+                                    </a>
+                                </li>
                                 <li>
                                     <a
                                         href="/"
@@ -129,7 +134,7 @@ export const Footer = () => {
                             <ul className="mt-2 space-y-2">
                                 <li>
                                     <a
-                                        href="/"
+                                        href="/contact"
                                         className="transition-colors duration-300 text-white hover:text-off-white"
                                     >
                                         Contact Us
@@ -137,7 +142,7 @@ export const Footer = () => {
                                 </li>
                                 <li>
                                     <a
-                                        href="/"
+                                        href="/donate"
                                         className="transition-colors duration-300 text-white hover:text-off-white"
                                     >
                                         Donate

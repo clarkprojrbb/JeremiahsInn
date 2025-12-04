@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const links = [
     { name: 'Donate', href: '/donate' },
-    { name: 'Partner', href: '#' },
-    { name: 'Volunteer', href: '#' },
+    { name: 'Partner', href: '/partner' },
+    { name: 'Volunteer', href: '/volunteer' },
 ]
 const stats = [
     { name: 'Individuals Served in 2024 through the nutrition center', value: '32k' },
@@ -137,12 +137,16 @@ export default function Home() {
                         <SingleCard
                             image="/partner.png"
                             CardTitle="Residential Substance Use Disorder (SUD) Treatment"
+                            titleHref="/#"
+                            btnHref="/partner"
                             CardDescription="Our Social Model Treatment Facilities guide over 100 men each year in their efforts to ser and achieve healthy attainable goals, change behavior, and learn to LIVE recovery."
                             Button="Partner"
                         />
                         <SingleCard
                             image="/volunteer.png"
                             CardTitle="Jeremiah’s House"
+                            titleHref="/#"
+                            btnHref="/volunteer"
                             CardDescription="16-bed Recovery Residence is located on Highland St. Learn More"
                             Button="Volunteer"
                         />
