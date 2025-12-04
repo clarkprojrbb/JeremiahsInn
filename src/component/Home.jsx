@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
-import Header from "./Header";
 
 const links = [
     { name: 'Donate', href: '#' },
@@ -48,18 +47,21 @@ const SingleCard = ({
                 ">
                     {CardDescription}
                 </p>
-            </div>
-            <div className="inline-block rounded-full px-7 py-3 mt-auto
-                        border-2 border-dark-blue bg-dark-blue text-base font-bold
+                <div className="align-items-baseline">
+                    {Button && (
+                        <Link
+                            to={btnHref ? btnHref : "#"}
+                            className="inline-block rounded-full px-7 py-3 mx-auto
+                        border-2 border-dark-blue bg-dark-blue text-centered font-bold
                         text-white transition duration-300 uppercase
                         hover:bg-off-white hover:text-dark-blue hover:border-dark-blue
-                        shadow-lg hover:shadow-xl transform hover:scale-[1.02]"> {Button && (
-                <Link
-                    to={btnHref ? btnHref : "#"}
-                >
-                    {Button}
-                </Link>
-            )} </div>
+                        shadow-lg hover:shadow-xl transform hover:scale-[1.02]">
+                            {Button}
+                        </Link>
+                    )}
+                </div>
+
+            </div>
         </div>
     );
 };
