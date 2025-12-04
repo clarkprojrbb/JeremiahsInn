@@ -47,7 +47,11 @@ function Header() {
                                 <Link
                                     key={item.name}
                                     to={item.path}
-                                    className="text-white text-base font-medium hover:text-light-orange transition duration-150"
+                                    className="inline-block rounded-full px-2
+            border-2 border-dark-blue bg-dark-blue text-base font-bold
+            text-white transition duration-300
+                                    hover:bg-off-white hover:text-dark-blue hover:border-dark-blue
+            shadow-lg hover:shadow-xl transform hover:scale-[1.02]"
                                 >
                                     {item.name}
                                 </Link>
@@ -58,7 +62,8 @@ function Header() {
                                 <div className="relative">
                                     <input
                                         type="text"
-                                        className="p-2 pl-4 text-sm text-off-black rounded-full border border-dark-blue focus:outline-none focus:ring-2 focus:ring-light-orange w-40 transition"
+                                        className="p-2 pl-4 text-sm text-off-black rounded-full border border-dark-blue
+                                        focus:outline-none focus:ring-2 focus:ring-white w-40 transition"
                                         placeholder="Search..."
                                     />
                                     <button type="submit" className="absolute right-0 top-0 mt-2 mr-3 text-dark-blue">
@@ -96,7 +101,11 @@ function Header() {
                             <Link
                                 key={item.name}
                                 to={item.path}
-                                className="text-white hover:bg-med-blue hover:text-light-orange block px-3 py-2 rounded-md text-base font-medium transition duration-150"
+                                className="inline-block rounded-full px-2
+            border-2 border-dark-blue bg-dark-blue text-base font-bold
+            text-white transition duration-300
+            hover:bg-off-white hover:text-dark-blue hover:border-dark-blue
+            shadow-lg hover:shadow-xl transform hover:scale-[1.02]"
                                 onClick={() => setIsMenuOpen(false)} // Close menu on click
                             >
                                 {item.name}
