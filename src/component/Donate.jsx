@@ -68,28 +68,38 @@ export default function Donate() {
                 <div className="relative mx-auto px-6">
                     <div className="relative px-10 py-10 lg:px-12 lg:py-12 grid gap-10 lg:grid-cols-2 items-center max-w-5xl mx-auto">
                     <div className="space-y-2 max-w-md lg:max-w-lg">
-                            <p className="text-white text-sm">
+                            <p className="text-white text-lg">
                                 Support Hope and Healing in Worcester
                             </p>
                             <h1 className="text-4xl font-bold text-white">
                                 Two programs. One mission of care.
                             </h1>
-                            <p className="text-sm text-white max-w-xl">
+                            <p className="text-lg text-white max-w-xl">
                                 Here at Jeremiah's Inn we house two programs under one roof. Your support helps us provide meals, shelter, and long-term recovery services to our neighbors in need.
                             </p>
                             <p className="text-sm text-white font-medium">
                                 Honorable mention of our partners. Their support of the Jeremiah's Inn mission
                                 helps provide relief and comfort to the community.
                             </p>
-                            <p className="text-sm font-bold text-white font-medium">
+                            <p className="text-sm font-bold text-light-orange">
                                 P.O. Box 30305, Worcester, MA 01603
                             </p>
+                        </div>
+                        <div className="lg:justify-self-end">
+                            <div className="rounded-[18px] overflow-hidden shadow-lg">
+                                <img
+                                    src="/donation.jpg"
+                                    alt="Volunteers preparing donations"
+                                    className="w-full h-auto object-cover"
+                                    style={{ maxWidth: "420px" }}
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section className="pb-10 pt-20 dark:bg-dark lg:py-10" style={{ backgroundColor: 'rgb(235, 235, 235)' }}>
+            <section className="pb-10 pt-20 dark:bg-dark lg:py-10" style={{ backgroundColor: 'light-orange' }}>
                 <div className="max-w-7xl mx-auto px-6 lg:px-8">
                     <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 items-stretch">
                         <SingleCard
@@ -122,7 +132,7 @@ export default function Donate() {
             </section>
 
             <section className="relative ItemsNeeded py-20 mt-10 dark:bg-dark">
-                <div className="absolute inset-0 bg-[url('/texture-pattern.png')] opacity-5"></div>
+                <div className="absolute inset-0 opacity-5"></div>
                 <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
                     <p className="text-center text-dark-blue text-3xl mx-auto mb-12 leading-relaxed">
                         Right now, Jeremiah's Inn urgently needs support to provide nutritious food, essential supplies, safe housing, and recovery services for individuals and families in Worcester. Contributions help keep our pantry stocked, maintain residential programs, and sustain counseling and wellness services that empower people to rebuild their lives with dignity and stability. Every gift makes an immediate impact, ensuring care, compassion, and hope reach those who need it most.
@@ -132,17 +142,6 @@ export default function Donate() {
                             className="w-full max-w-3xl overflow-hidden mt-10"
                             style={{ borderRadius: "32px" }}
                         >
-                            <img
-                                src="/donation.jpg"
-                                alt="Volunteers preparing donations"
-                                style={{
-                                    width: "50%",
-                                    height: "auto",
-                                    display: "block",
-                                    margin: "0 auto",
-                                    borderRadius: "32px",
-                                }}
-                            />
                         </div>
                     </div>
 
@@ -208,7 +207,7 @@ export default function Donate() {
             <section className="pb-20 bg-white mt-10">
                 <div className="max-w-6xl mx-auto py-10 text-center">
                     <h3 className="text-3xl font-bold mb-6">Items We Cannot Accept</h3>
-                    <ul className="list-disc ml-5 space-y-2 text-med-blue text-left inline-block">
+                    <ul className="list-disc text-lg space-y-2 text-med-blue text-left inline-block">
                         <li>Expired or open containers</li>
                         <li>Used or open toiletries</li>
                         <li>Used underwear and socks</li>
