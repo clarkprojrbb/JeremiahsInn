@@ -4,6 +4,11 @@ module.exports = {
       "./src/component/Footer.jsx",
       "./src/component/Header.jsx",
       "./src/component/Home.jsx",
+      "./src/component/Contact.jsx",
+      "./src/component/AboutUs.jsx",
+      "./src/component/Donate.jsx",
+      "./src/component/Partner.jsx",
+      "./src/component/Volunteer.jsx",
       "./public/index.html",
       "./App.js",
       "./index.js"
