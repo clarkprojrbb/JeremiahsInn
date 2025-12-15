@@ -39,7 +39,7 @@ export default function ResidentialTreatment() {
                     </p>
                     <div className="text-center mb-12 mt-10">
                         <button
-                            className="bg-light-orange text-dark-blue px-10 py-4 rounded-2xl text-xl font-bold hover:bg-dark-blue transition-colors shadow-lg">
+                            className="bg-light-orange text-dark-blue px-10 py-4 rounded-2xl text-xl font-bold hover:bg-amber-600 transition-colors shadow-lg">
                             Apply For Treatment
                         </button>
                     </div>
@@ -105,9 +105,16 @@ export default function ResidentialTreatment() {
                                         form</p>
                                 </div>
                             </div>
+
                             <button
-                                className="mt-4 bg-light-blue text-white px-6 py-2 rounded hover:bg-med-blue transition-colors w-full flex items-center justify-center">
-                                <FileDown className="w-5 h-5 mr-2"/>
+                                onClick={() =>
+                                    window.open(
+                                        "https://jeremiahsinn.com/wp-content/uploads/2020/10/Admission-Criteria.pdf",
+                                        "_blank"
+                                    )
+                                }
+                                className="bg-light-blue text-white font-bold py-2 mt-5 rounded hover:bg-med-blue transition-colors w-full flex items-center justify-center"
+                            >
                                 Download Admission Criteria
                             </button>
                         </div>
@@ -416,7 +423,7 @@ export default function ResidentialTreatment() {
                     </div>
 
 
-                
+
 
                     <div className="mt-6 bg-gray-50 rounded-lg p-4">
                         <h4 className="font-semibold text-gray-800 mb-2">Homelessness Resources:</h4>
