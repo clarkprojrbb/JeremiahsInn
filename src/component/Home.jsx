@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 const links = [
     { name: 'Donate', href: '/donate' },
-    { name: 'Partner', href: '/partner' },
     { name: 'Volunteer', href: '/volunteer' },
 ]
 const stats = [
@@ -138,9 +137,9 @@ export default function Home() {
                             image="/partner.png"
                             CardTitle="Residential Substance Use Disorder (SUD) Treatment"
                             titleHref="/#"
-                            btnHref="/partner"
+                            btnHref="/residential"
                             CardDescription="Our Social Model Treatment Facilities guide over 100 men each year in their efforts to ser and achieve healthy attainable goals, change behavior, and learn to LIVE recovery."
-                            Button="Partner"
+                            Button="Apply"
                         />
                         <SingleCard
                             image="/volunteer.png"

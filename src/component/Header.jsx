@@ -14,14 +14,24 @@ import { Link } from "react-router-dom";
 
 const involvedSubItems = [
     { name: 'Donate', description: 'Support our mission.', path: '/donate' },
-    { name: 'Partner', description: 'Explore partnerships.', path: '/partner' },
     { name: 'Volunteer', description: 'Give your time.', path: '/volunteer' },
 ];
+
+const involvedItems = [
+    { name: 'Nutrition Center', description: 'Explore food pantry options.', path: '/nutrition' },
+    { name: 'Recovery Program', description: 'TBD.', path: '/recover' },
+    { name: 'Residential Treatment', description: 'Apply for treatment.', path: '/residential' },
+]
 
 const navItems = [
     { name: 'Home', path: '/'},
     { name: 'About Us', path: '/about' },
-    { name: 'Programs', path: '/programs' },
+    {
+        name: 'Programs',
+        path: '#',
+        type: "dropdown",
+        subItems: involvedItems
+    },
     {
         name: 'Get Involved',
         path: '#',
