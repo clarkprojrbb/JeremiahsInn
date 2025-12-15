@@ -13,9 +13,9 @@ import { Link } from "react-router-dom";
 // }
 
 const involvedSubItems = [
-    { name: 'Donate', description: 'Make a financial contribution to support our mission.', path: '/donate' },
-    { name: 'Partner', description: 'Explore business and organizational partnerships.', path: '/partner' },
-    { name: 'Volunteer', description: 'Give your time to directly support our programs.', path: '/volunteer' },
+    { name: 'Donate', description: 'Support our mission.', path: '/donate' },
+    { name: 'Partner', description: 'Explore partnerships.', path: '/partner' },
+    { name: 'Volunteer', description: 'Give your time.', path: '/volunteer' },
 ];
 
 const navItems = [
@@ -29,16 +29,22 @@ const navItems = [
         subItems: involvedSubItems
     },
     { name: 'Contact Us', path: '/contact' },
-    { name: 'News & Events', path: '/events' },
 ];
 
 function Header() {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [openDropdown, setOpenDropdown] = useState(null);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+    const toggleDropdown = (name) => {
+        if (navItems.find(item => item.name === name)?.type === 'dropdown') {
+            setOpenDropdown(openDropdown === name ? null : name);
+        }
+    };
+
     const navButtonClass = "inline-flex items-center rounded-full px-3 py-1 border-2 border-dark-blue bg-dark-blue text-base font-bold text-white transition duration-300 hover:bg-off-white hover:text-dark-blue hover:border-dark-blue shadow-lg hover:shadow-xl transform hover:scale-[1.02] whitespace-nowrap";
     const mobileLinkClass = "block w-full text-left px-3 py-2 text-base font-medium text-white hover:bg-blue-800 rounded-md transition duration-150 ease-in-out";
-
 
     return (
         <header className="bg-dark-blue shadow-lg font-sans">
@@ -53,22 +59,56 @@ function Header() {
                         />
                     </Link>
 
-                    {/* Desktop Navigation & Search */}
                     <div className="hidden lg:flex lg:items-center lg:space-x-8">
-                        {/* Links */}
                         <div className="flex items-center space-x-6">
                             {navItems.map((item) => (
-                                <Link
-                                    key={item.name}
-                                    to={item.path}
-                                    className="inline-block rounded-full px-2
-            border-2 border-dark-blue bg-dark-blue text-base font-bold
-            text-white transition duration-300
-            hover:bg-off-white hover:text-dark-blue hover:border-dark-blue
-            shadow-lg hover:shadow-xl transform hover:scale-[1.02]"
-                                >
-                                    {item.name}
-                                </Link>
+                                <div key={item.name} className="relative">
+                                    {item.type === 'dropdown' ? (
+                                        // Dropdown Button
+                                        <button
+                                            // Toggle dropdown state on click
+                                            onClick={() => toggleDropdown(item.name)}
+                                            className={`${navButtonClass} flex items-center`}
+                                        >
+                                            {item.name}
+                                            <i className={`fa-solid fa-chevron-down w-4 h-4 ml-2 transition-transform duration-200 ${openDropdown === item.name ? 'rotate-180' : 'rotate-0'}`}></i>
+                                        </button>
+                                    ) : (
+                                        // Standard Link
+                                        <Link
+                                            to={item.path}
+                                            className={navButtonClass}
+                                        >
+                                            {item.name}
+                                        </Link>
+                                    )}
+
+                                    {/* Dropdown Menu (Desktop) */}
+                                    {item.type === 'dropdown' && openDropdown === item.name && (
+                                        <div
+                                            // Close dropdown when mouse leaves the menu area
+                                            onMouseLeave={() => setOpenDropdown(null)}
+                                            className="absolute left-0 mt-3 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-20"
+                                        >
+                                            <div className="py-1" role="menu" aria-orientation="vertical">
+                                                {item.subItems.map((subItem) => (
+                                                    <Link
+                                                        key={subItem.name}
+                                                        to={subItem.path}
+                                                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-dark-blue transition duration-150"
+                                                        role="menuitem"
+                                                        onClick={() => setOpenDropdown(null)}
+                                                    >
+                                                        <span className="font-semibold">{subItem.name}</span>
+                                                        {subItem.description && (
+                                                            <p className="text-xs text-gray-500 line-clamp-1">{subItem.description}</p>
+                                                        )}
+                                                    </Link>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    )}
+                                </div>
                             ))}
                             {/* Search (Aligned to the right) */}
                             <div className="flex items-center">

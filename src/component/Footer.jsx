@@ -21,73 +21,21 @@ export const Footer = () => {
                             src="/logo_full_transparent.png"
                         />
                         <div>
-                            <ul className="mt-2 space-y-2">
-                                <li>
-                                    <a
-                                        href="/about"
-                                        className="transition-colors duration-300 text-white hover:text-off-white"
-                                    >
-                                        About Us
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="/"
-                                        className="transition-colors duration-300 text-white hover:text-off-white"
-                                    >
-                                        History
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="/"
-                                        className="transition-colors duration-300 text-white hover:text-off-white"
-                                    >
-                                        Board of Directors
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="/"
-                                        className="transition-colors duration-300 text-white hover:text-off-white"
-                                    >
-                                        Staff
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="/"
-                                        className="transition-colors duration-300 text-white hover:text-off-white"
-                                    >
-                                        Our Mission
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="/"
-                                        className="transition-colors duration-300 text-white hover:text-off-white"
-                                    >
-                                        #WeAreJI
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="/"
-                                        className="transition-colors duration-300 text-white hover:text-off-white"
-                                    >
-                                        Our Values
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
                             <p className="font-semibold tracking-wide text-white">
                                 Explore
                             </p>
+                            <li>
+                                <a
+                                    href="/about"
+                                    className="transition-colors duration-300 text-white hover:text-off-white"
+                                >
+                                    About Us
+                                </a>
+                            </li>
                             <ul className="mt-2 space-y-2">
                                 <li>
                                     <a
-                                        href="/"
+                                        href="/nutrition"
                                         className="transition-colors duration-300 text-white hover:text-off-white"
                                     >
                                         Nutrition Center
@@ -95,7 +43,7 @@ export const Footer = () => {
                                 </li>
                                 <li>
                                     <a
-                                        href="/"
+                                        href="/residential"
                                         className="transition-colors duration-300 text-white hover:text-off-white"
                                     >
                                         Residential Treatment
@@ -103,28 +51,36 @@ export const Footer = () => {
                                 </li>
                                 <li>
                                     <a
-                                        href="/"
+                                        href="/recovery"
                                         className="transition-colors duration-300 text-white hover:text-off-white"
                                     >
                                         Recovery Program
                                     </a>
                                 </li>
-                                <li>
-                                    <a
-                                        href="/"
-                                        className="transition-colors duration-300 text-white hover:text-off-white"
-                                    >
-                                        Alumni Program
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="/"
-                                        className="transition-colors duration-300 text-white hover:text-off-white"
-                                    >
-                                        Community Naxolone Purchasing Program (CNPP)
-                                    </a>
-                                </li>
+                                {/*<li>*/}
+                                {/*    <a*/}
+                                {/*        href="/"*/}
+                                {/*        className="transition-colors duration-300 text-white hover:text-off-white"*/}
+                                {/*    >*/}
+                                {/*        News*/}
+                                {/*    </a>*/}
+                                {/*</li>*/}
+                                {/*<li>*/}
+                                {/*    <a*/}
+                                {/*        href="/"*/}
+                                {/*        className="transition-colors duration-300 text-white hover:text-off-white"*/}
+                                {/*    >*/}
+                                {/*        Alumni Program*/}
+                                {/*    </a>*/}
+                                {/*</li>*/}
+                                {/*<li>*/}
+                                {/*    <a*/}
+                                {/*        href="/"*/}
+                                {/*        className="transition-colors duration-300 text-white hover:text-off-white"*/}
+                                {/*    >*/}
+                                {/*        Community Naxolone Purchasing Program (CNPP)*/}
+                                {/*    </a>*/}
+                                {/*</li>*/}
                             </ul>
                         </div>
                         <div>
@@ -150,44 +106,44 @@ export const Footer = () => {
                                 </li>
                                 <li>
                                     <a
-                                        href="/"
+                                        href="/volunteer"
                                         className="transition-colors duration-300 text-white hover:text-off-white"
                                     >
                                         Volunteer Programs
                                     </a>
                                 </li>
-                                <li>
-                                    <a
-                                        href="/"
-                                        className="transition-colors duration-300 text-white hover:text-off-white"
-                                    >
-                                        Internship Program
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="/"
-                                        className="transition-colors duration-300 text-white hover:text-off-white"
-                                    >
-                                        Holiday Wish Program
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="/"
-                                        className="transition-colors duration-300 text-white hover:text-off-white"
-                                    >
-                                        Careers
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="/"
-                                        className="transition-colors duration-300 text-white hover:text-off-white"
-                                    >
-                                        FAQs
-                                    </a>
-                                </li>
+                                {/*<li>*/}
+                                {/*    <a*/}
+                                {/*        href="/internship"*/}
+                                {/*        className="transition-colors duration-300 text-white hover:text-off-white"*/}
+                                {/*    >*/}
+                                {/*        Internship Program*/}
+                                {/*    </a>*/}
+                                {/*</li>*/}
+                                {/*<li>*/}
+                                {/*    <a*/}
+                                {/*        href="/"*/}
+                                {/*        className="transition-colors duration-300 text-white hover:text-off-white"*/}
+                                {/*    >*/}
+                                {/*        Holiday Wish Program*/}
+                                {/*    </a>*/}
+                                {/*</li>*/}
+                                {/*<li>*/}
+                                {/*    <a*/}
+                                {/*        href="/"*/}
+                                {/*        className="transition-colors duration-300 text-white hover:text-off-white"*/}
+                                {/*    >*/}
+                                {/*        Careers*/}
+                                {/*    </a>*/}
+                                {/*</li>*/}
+                                {/*<li>*/}
+                                {/*    <a*/}
+                                {/*        href="/"*/}
+                                {/*        className="transition-colors duration-300 text-white hover:text-off-white"*/}
+                                {/*    >*/}
+                                {/*        FAQs*/}
+                                {/*    </a>*/}
+                                {/*</li>*/}
                             </ul>
                         </div>
                     </div>
@@ -198,15 +154,15 @@ export const Footer = () => {
                     </p>
                     <div className="flex items-center mt-4 space-x-4 sm:mt-0">
                         <a
-                            href="/"
+                            href="https://x.com/Jeremiahs_Inn"
                             className="transition-colors duration-300 text-white hover:text-off-white"
                         >
-                            <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
-                                <path d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z" />
+                            <svg width="19" height="19" viewBox="0 0 1200 1200" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z" fill="white"/>
                             </svg>
                         </a>
                         <a
-                            href="/"
+                            href="https://www.instagram.com/jeremiahs_inn/"
                             className="transition-colors duration-300 text-white hover:text-off-white"
                         >
                             <svg viewBox="0 0 30 30" fill="currentColor" className="h-6">
@@ -215,7 +171,7 @@ export const Footer = () => {
                             </svg>
                         </a>
                         <a
-                            href="/"
+                            href="https://www.facebook.com/JeremiahsInnInc"
                             className="transition-colors duration-300 text-white hover:text-off-white"
                         >
                             <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">

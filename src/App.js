@@ -5,6 +5,8 @@ import Donate from "./component/Donate"
 import Volunteer from "./component/Volunteer"
 import Partner from "./component/Partner"
 import AboutUs from "./component/AboutUs";
+import Nutrition from "./component/Nutrition";
+import Residential from "./component/Residential";
 import Footer from "./component/Footer"
 
 import {Routes, Route} from "react-router-dom";
@@ -21,6 +23,8 @@ function App() {
               <Route path="/volunteer" element={<Volunteer/>}/>
               <Route path="/partner" element={<Partner/>}/>
               <Route path="/about" element={<AboutUs/>}/>
+              <Route path="/nutrition" element={<Nutrition/>}/>
+              <Route path="/residential" element={<Residential/>}/>
           </Routes>
           <Footer/>
       </div>

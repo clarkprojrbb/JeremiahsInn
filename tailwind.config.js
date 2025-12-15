@@ -9,6 +9,8 @@ module.exports = {
       "./src/component/Donate.jsx",
       "./src/component/Partner.jsx",
       "./src/component/Volunteer.jsx",
+      "./src/component/Nutrition.jsx",
+      "./src/component/Residential.jsx",
       "./public/index.html",
       "./App.js",
       "./index.js"
