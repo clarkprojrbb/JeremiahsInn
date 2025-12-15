@@ -22,59 +22,20 @@ export const Footer = () => {
                         />
                         <div>
                             <p className="font-semibold tracking-wide text-white">
-                                About Us
-                            </p>
-                            <ul className="mt-2 space-y-2">
-                                {/*<li>*/}
-                                {/*    <a*/}
-                                {/*        href="/"*/}
-                                {/*        className="transition-colors duration-300 text-white hover:text-off-white"*/}
-                                {/*    >*/}
-                                {/*        History*/}
-                                {/*    </a>*/}
-                                {/*</li>*/}
-                                <li>
-                                    <a
-                                        href="/about"
-                                        className="transition-colors duration-300 text-white hover:text-off-white"
-                                    >
-                                        Staff & Board of Directors
-                                    </a>
-                                </li>
-                                {/*<li>*/}
-                                {/*    <a*/}
-                                {/*        href="/"*/}
-                                {/*        className="transition-colors duration-300 text-white hover:text-off-white"*/}
-                                {/*    >*/}
-                                {/*        Our Mission*/}
-                                {/*    </a>*/}
-                                {/*</li>*/}
-                                {/*<li>*/}
-                                {/*    <a*/}
-                                {/*        href="/"*/}
-                                {/*        className="transition-colors duration-300 text-white hover:text-off-white"*/}
-                                {/*    >*/}
-                                {/*        WeAreJI*/}
-                                {/*    </a>*/}
-                                {/*</li>*/}
-                                {/*<li>*/}
-                                {/*    <a*/}
-                                {/*        href="/"*/}
-                                {/*        className="transition-colors duration-300 text-white hover:text-off-white"*/}
-                                {/*    >*/}
-                                {/*        Our Values*/}
-                                {/*    </a>*/}
-                                {/*</li>*/}
-                            </ul>
-                        </div>
-                        <div>
-                            <p className="font-semibold tracking-wide text-white">
                                 Explore
                             </p>
+                            <li>
+                                <a
+                                    href="/about"
+                                    className="transition-colors duration-300 text-white hover:text-off-white"
+                                >
+                                    About Us
+                                </a>
+                            </li>
                             <ul className="mt-2 space-y-2">
                                 <li>
                                     <a
-                                        href="/"
+                                        href="/nutrition"
                                         className="transition-colors duration-300 text-white hover:text-off-white"
                                     >
                                         Nutrition Center
@@ -82,7 +43,7 @@ export const Footer = () => {
                                 </li>
                                 <li>
                                     <a
-                                        href="/"
+                                        href="/residential"
                                         className="transition-colors duration-300 text-white hover:text-off-white"
                                     >
                                         Residential Treatment
@@ -90,20 +51,20 @@ export const Footer = () => {
                                 </li>
                                 <li>
                                     <a
-                                        href="/"
+                                        href="/recovery"
                                         className="transition-colors duration-300 text-white hover:text-off-white"
                                     >
                                         Recovery Program
                                     </a>
                                 </li>
-                                <li>
-                                    <a
-                                        href="/"
-                                        className="transition-colors duration-300 text-white hover:text-off-white"
-                                    >
-                                        News
-                                    </a>
-                                </li>
+                                {/*<li>*/}
+                                {/*    <a*/}
+                                {/*        href="/"*/}
+                                {/*        className="transition-colors duration-300 text-white hover:text-off-white"*/}
+                                {/*    >*/}
+                                {/*        News*/}
+                                {/*    </a>*/}
+                                {/*</li>*/}
                                 {/*<li>*/}
                                 {/*    <a*/}
                                 {/*        href="/"*/}
@@ -129,7 +90,7 @@ export const Footer = () => {
                             <ul className="mt-2 space-y-2">
                                 <li>
                                     <a
-                                        href="/"
+                                        href="/contact"
                                         className="transition-colors duration-300 text-white hover:text-off-white"
                                     >
                                         Contact Us
@@ -137,7 +98,7 @@ export const Footer = () => {
                                 </li>
                                 <li>
                                     <a
-                                        href="/"
+                                        href="/donate"
                                         className="transition-colors duration-300 text-white hover:text-off-white"
                                     >
                                         Donate
@@ -145,20 +106,20 @@ export const Footer = () => {
                                 </li>
                                 <li>
                                     <a
-                                        href="/"
+                                        href="/volunteer"
                                         className="transition-colors duration-300 text-white hover:text-off-white"
                                     >
                                         Volunteer Programs
                                     </a>
                                 </li>
-                                <li>
-                                    <a
-                                        href="/"
-                                        className="transition-colors duration-300 text-white hover:text-off-white"
-                                    >
-                                        Internship Program
-                                    </a>
-                                </li>
+                                {/*<li>*/}
+                                {/*    <a*/}
+                                {/*        href="/internship"*/}
+                                {/*        className="transition-colors duration-300 text-white hover:text-off-white"*/}
+                                {/*    >*/}
+                                {/*        Internship Program*/}
+                                {/*    </a>*/}
+                                {/*</li>*/}
                                 {/*<li>*/}
                                 {/*    <a*/}
                                 {/*        href="/"*/}
