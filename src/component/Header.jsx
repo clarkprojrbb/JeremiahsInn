@@ -120,24 +120,7 @@ function Header() {
                                     )}
                                 </div>
                             ))}
-                            {/* Search (Aligned to the right) */}
-                            <div className="flex items-center">
-                                {/* Search Container */}
-                                <div className="relative">
-                                    <input
-                                        type="text"
-                                        className="p-2 pl-4 text-sm text-off-black rounded-full border border-dark-blue
-                                        focus:outline-none focus:ring-2 focus:ring-white w-40 transition"
-                                        placeholder="Search..."
-                                    />
-                                    <button type="submit" className="absolute right-0 top-0 mt-2 mr-3 text-dark-blue">
-                                        <i className="fa-solid fa-magnifying-glass"></i>
-                                    </button>
-                                </div>
 
-                                {/*/!* User Info *!/*/}
-                                {/*<UserInfo />*/}
-                            </div>
                         </div>
                     </div>
 
