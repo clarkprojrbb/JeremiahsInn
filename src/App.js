@@ -7,6 +7,7 @@ import Partner from "./component/Partner"
 import AboutUs from "./component/AboutUs";
 import Nutrition from "./component/Nutrition";
 import Residential from "./component/Residential";
+import Recovery from "./component/Recovery";
 import Footer from "./component/Footer"
 
 import {Routes, Route} from "react-router-dom";
@@ -25,6 +26,7 @@ function App() {
               <Route path="/about" element={<AboutUs/>}/>
               <Route path="/nutrition" element={<Nutrition/>}/>
               <Route path="/residential" element={<Residential/>}/>
+              <Route path="/recovery" element={<Recovery/>}/>
           </Routes>
           <Footer/>
       </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Clock, Users, Heart, AlertCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Users, Heart, AlertCircle, CircleMinus} from 'lucide-react';
 
 export default function NutritionCenter() {
     return (
@@ -16,7 +16,26 @@ export default function NutritionCenter() {
                     </div>
                 </div>
             </div>
+
             <div className="max-w-6xl mx-auto px-4 py-8">
+
+                {/*notice sect*/}
+                <div className="bg-white rounded-lg shadow-md p-6 mb-8">
+                    <div className="flex items-center mb-4">
+                        <CircleMinus className="w-6 h-6 text-red-400 mr-2" />
+                        <h2 className="text-2xl font-bold text-orange-600">Notice</h2>
+                    </div>
+                    <div className="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <h2 className="text-xl font-bold text-orange-600">Nutrition Center Updates:</h2>
+                            <p>Closed on December 24th & 25th for the Christmas Holiday.</p>
+                        </div>
+                        <div>
+                            <h2 className="text-xl font-bold text-orange-600">Centro de Nutrición Actualizaciones:</h2>
+                            <p>Cerrado el 24 y 25 de diciembre por las vacaciones de Navidad.</p>
+                        </div>
+                    </div>
+                </div>
                 <div className="bg-white rounded-lg shadow-md p-6 mb-8">
                     <h2 className="text-2xl font-bold text-gray-800 mb-6">Contact Information</h2>
                     <div className="grid md:grid-cols-2 gap-6">
@@ -98,7 +117,7 @@ export default function NutritionCenter() {
                     </div>
                 </div>
 
-{/*elig*/}
+                {/*elig*/}
                 <div className="bg-white rounded-lg shadow-md p-6 mb-8">
                     <div className="flex items-center mb-4">
                         <AlertCircle className="w-6 h-6 text-light-blue" />
@@ -163,7 +182,7 @@ export default function NutritionCenter() {
                             </a></p>
                         <p className="text-gray-700"><span className="font-semibold">Português:</span> Para saber mais sobre os critérios de elegibilidade e agendamento para o Banco de Alimentos,
                             <a href="https://docs.google.com/document/d/1VDWz0foYANHhRC7NTbcx680zcnG05gwh/edit" className="text-light-blue hover:underline font-semibold">
-                                HAGA CLIC AQUÍ
+                                CLIQUE AQUI
                             </a></p>
                         <p className="text-gray-700"><span className="font-semibold">Tiếng Việt:</span> Để tìm hiểu về điều kiện tham gia và lịch hẹn của Food Pantry,
                             <a href="https://docs.google.com/document/d/1VDWz0foYANHhRC7NTbcx680zcnG05gwh/edit" className="text-light-blue hover:underline font-semibold">
@@ -233,7 +252,7 @@ export default function NutritionCenter() {
                         </figure></p>
                 </div>
 
-               {/*res*/}
+                {/*res*/}
                 <div className="bg-white rounded-lg shadow-md p-6">
                     <h2 className="text-2xl font-bold text-gray-800 mb-4">Additional Resources</h2>
                     <div className="space-y-2">
@@ -249,4 +268,3 @@ export default function NutritionCenter() {
         </div>
     )
 }
-

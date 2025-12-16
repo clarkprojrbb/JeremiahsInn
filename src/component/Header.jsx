@@ -19,7 +19,7 @@ const involvedSubItems = [
 
 const involvedItems = [
     { name: 'Nutrition Center', description: 'Explore food pantry options.', path: '/nutrition' },
-    { name: 'Recovery Program', description: 'TBD.', path: '/recover' },
+    { name: 'Recovery Program', description: 'Emergency food and lodging.', path: '/recovery' },
     { name: 'Residential Treatment', description: 'Apply for treatment.', path: '/residential' },
 ]
 

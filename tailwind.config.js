@@ -1,40 +1,39 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: [
-        "./src/component/Footer.jsx",
-        "./src/component/Header.jsx",
-        "./src/component/Home.jsx",
-        "./src/component/Contact.jsx",
-        "./src/component/AboutUs.jsx",
-        "./src/component/Donate.jsx",
-        "./src/component/Partner.jsx",
-        "./src/component/Volunteer.jsx",
-        "./src/component/Nutrition.jsx",
-        "./src/component/Residential.jsx",
-        "./src/component/Recovery.jsx",
-        "./src/component/Form.jsx",
-        "./src/component/VolunteerForm.jsx",
-        "./public/index.html",
-        "./App.js",
-        "./index.js"
-    ],
-    theme: {
-        extend: {
-            fontFamily: {
-                sans: [
-                    'Nunito'
-                ],
-            },
-            colors: {
-                'dark-blue': '#1B245F',
-                'med-blue': 'rgb(45, 56, 131)',
-                'light-blue': 'rgb(68, 83, 184)',
-                'light-orange': 'rgb(255, 216, 126)',
-                'off-black': 'rgb(67,65,65)',
-                'off-white': 'rgb(176, 187, 197)',
-                'white': '#FFFFFF',
-            },
+  content: [
+      "./src/component/Footer.jsx",
+      "./src/component/Header.jsx",
+      "./src/component/Home.jsx",
+      "./src/component/Contact.jsx",
+      "./src/component/AboutUs.jsx",
+      "./src/component/Donate.jsx",
+      "./src/component/Partner.jsx",
+      "./src/component/Volunteer.jsx",
+      "./src/component/Nutrition.jsx",
+      "./src/component/Residential.jsx",
+      "./src/component/Recovery.jsx",
+      "./public/index.html",
+      "./App.js",
+      "./index.js"
+  ],
+  theme: {
+    extend: {
+        fontFamily: {
+            sans: [
+                'Nunito'
+            ],
+        },
+        colors: {
+            'dark-blue': '#1B245F',
+            'med-blue': 'rgb(45, 56, 131)',
+            'light-blue': 'rgb(68, 83, 184)',
+            'light-orange': 'rgb(255, 216, 126)',
+            'off-black': 'rgb(67,65,65)',
+            'off-white': 'rgb(176, 187, 197)',
+            'white': '#FFFFFF',
         },
     },
-    plugins: [],
+  },
+  plugins: [],
 }
+

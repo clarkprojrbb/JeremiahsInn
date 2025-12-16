@@ -18,7 +18,7 @@ const posts = [
     {
         id: 2,
         href: '#',
-        description: '',
+        description: 'P.O. Box 30035 <br/>' + '1059 Main Street<br/>Worcester, MA 01603',
         category: { title: 'Mailing Address', href: '#' },
     },
     {
@@ -30,8 +30,9 @@ const posts = [
             'Phone: (508) 755-6403 <br/>' +
             'Please use the appropriate extensions. <br/>' +
             'Messages left on ext. “0” may not be forwarded. <br/>' +
-            'Please visit our Staff & Board of Directors page for a complete directory.',
-        category: { title: 'Email', href: '#' },
+            'Please visit our Staff & Board of Directors page for a complete directory. <br/>' +
+            'FAX: 508.793.9568',
+        category: { title: 'Reach out', href: '#' },
     },
 ]
 
