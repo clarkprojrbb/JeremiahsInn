@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { Link } from "react-router-dom";
+import React from 'react';
 
 const HtmlRenderer = ({ htmlContent, className }) => (
     <div
@@ -11,19 +10,16 @@ const HtmlRenderer = ({ htmlContent, className }) => (
 const posts = [
     {
         id: 1,
-        href: '#',
         description:'1059 Main Street<br />Worcester, MA 01603',
-        category: { title: 'Visit us in person', href: '#' },
+        category: { title: 'Visit us in person'},
     },
     {
         id: 2,
-        href: '#',
         description: 'P.O. Box 30035 <br/>' + '1059 Main Street<br/>Worcester, MA 01603',
-        category: { title: 'Mailing Address', href: '#' },
+        category: { title: 'Mailing Address'},
     },
     {
         id: 3,
-        href: '#',
         description: 'General Email: info@jeremiahsinn.com <br/> ' +
             'Residential Program Intake/Admission: <br/>' +
             'intake@jeremiahsinn.com <br/>' +
@@ -32,7 +28,7 @@ const posts = [
             'Messages left on ext. “0” may not be forwarded. <br/>' +
             'Please visit our Staff & Board of Directors page for a complete directory. <br/>' +
             'FAX: 508.793.9568',
-        category: { title: 'Reach out', href: '#' },
+        category: { title: 'Reach out'},
     },
 ]
 
@@ -75,10 +71,9 @@ export default function Contact() {
                     <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                         {posts.map((post) => (
                             <article key={post.id} className="flex max-w-xl flex-col items-start justify-between">
-                                <div className="flex items-center gap-x-4 text-xs">
+                                <div className="flex items-center gap-x-4 text-2xl">
                                     <a
-                                        href={post.category.href}
-                                        className="relative z-10 rounded-full bg-gray-800/60 px-3 py-1.5 font-bold text-black hover:bg-gray-800"
+                                        className="relative z-10 rounded-full bg-off-white px-3 py-1.5 font-bold text-black"
                                     >
                                         {post.category.title}
                                     </a>
@@ -86,7 +81,7 @@ export default function Contact() {
                                 <div className="group relative grow">
                                     <HtmlRenderer
                                         htmlContent={post.description}
-                                        className="mt-5 text-sm/6 text-gray-600"
+                                        className="mt-5 mx-2 text-gray-600"
                                     />
                                 </div>
                             </article>

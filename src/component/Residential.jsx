@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Heart, Users, CheckCircle, AlertCircle, Phone, Mail, FileDown, ChevronDown, ChevronUp, Activity, Brain, Sparkles } from 'lucide-react';
+import { Heart, CheckCircle, AlertCircle, Phone, Mail, FileDown, ChevronDown, ChevronUp, Activity, Sparkles } from 'lucide-react';
+import {Link} from "react-router-dom";
 
 
 export default function ResidentialTreatment() {
@@ -11,19 +12,19 @@ export default function ResidentialTreatment() {
 
     return (
         <div className="min-h-screen bg-dark-blue">
-                <div
-                    className="relative text-white py-20 px-4 bg-cover bg-center"
-                    style={{ backgroundImage: "url('/residential1.jpg')" }}
-                >
+            <div
+                className="relative text-white py-20 px-4 bg-cover bg-center"
+                style={{ backgroundImage: "url('/residential1.jpg')" }}
+            >
 
 
-                    <div className="relative max-w-6xl mx-auto text-center z-10">
-                        <h1 className="text-4xl md:text-5xl font-bold mb-4">Residential Rehabilitative Recovery Services</h1>
-                        <p className="text-xl md:text-2xl text-white mb-4">Transforming Lives Through Comprehensive Treatment</p>
-                        <p className="text-lg text-white max-w-3xl mx-auto">
-                            Assisting over 100 men each year in making the necessary changes to their thinking and behavior that supports a recovered lifestyle
-                        </p>
-                    </div>
+                <div className="relative max-w-6xl mx-auto text-center z-10">
+                    <h1 className="text-4xl md:text-5xl font-bold mb-4">Residential Rehabilitative Recovery Services</h1>
+                    <p className="text-xl md:text-2xl text-white mb-4">Transforming Lives Through Comprehensive Treatment</p>
+                    <p className="text-lg text-white max-w-3xl mx-auto">
+                        Assisting over 100 men each year in making the necessary changes to their thinking and behavior that supports a recovered lifestyle
+                    </p>
+                </div>
             </div>
             <div className="max-w-6xl mx-auto px-4 py-12">
                 <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
@@ -38,10 +39,10 @@ export default function ResidentialTreatment() {
                         Scroll down for eligibility information and answers to FAQs.
                     </p>
                     <div className="text-center mb-12 mt-10">
-                        <button
-                            className="bg-light-orange text-dark-blue px-10 py-4 rounded-2xl text-xl font-bold hover:bg-amber-600 transition-colors shadow-lg">
-                            Apply For Treatment
-                        </button>
+                        <Link to="/program-form"
+                                className="bg-light-orange text-dark-blue px-10 py-4 rounded-2xl text-xl font-bold hover:bg-amber-600 transition-colors shadow-lg">
+                                Apply For Treatment
+                        </Link>
                     </div>
 
                 </div>
@@ -147,10 +148,11 @@ export default function ResidentialTreatment() {
                             <CheckCircle className="w-12 h-12 text-green-600 mx-auto mb-3"/>
                             <h4 className="font-bold text-gray-800 mb-2">1. Online Application</h4>
                             <p className="text-sm text-gray-700 mb-4">Submit online and upload documents</p>
-                            <button
+                            <Link
+                                to="/program-form"
                                 className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition-colors w-full">
                                 Apply Now
-                            </button>
+                            </Link>
                         </div>
 
                         <div className="bg-blue-50 border-2 border-blue-600 rounded-lg p-6 text-center">
@@ -191,7 +193,7 @@ export default function ResidentialTreatment() {
                         </div>
                     </div>
 
-                  {/*contact sector - finished*/}
+                    {/*contact sector - finished*/}
                     <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6">
                         <p className="font-semibold text-yellow-900 mb-3">To Check Application Status:</p>
                         <div className="flex flex-col md:flex-row md:items-center md:space-x-6 space-y-2 md:space-y-0">
@@ -271,7 +273,7 @@ export default function ResidentialTreatment() {
                         )}
                     </div>
 
-                  {/*faq2 - updated*/}
+                    {/*faq2 - updated*/}
                     <div className="border-b border-gray-200 pb-4 mb-4">
                         <button
                             onClick={() => toggleFaq(2)}
@@ -324,7 +326,7 @@ export default function ResidentialTreatment() {
                         )}
                     </div>
 
-                   {/*faq3 - updated */}
+                    {/*faq3 - updated */}
                     <div className="pb-4">
                         <button
                             onClick={() => toggleFaq(3)}
@@ -368,74 +370,74 @@ export default function ResidentialTreatment() {
                     </div>
                 </div>
 
-                    <div className="flex items-center mb-6">
-                        <AlertCircle className="w-8 h-8 text-light-orange mr-3"/>
-                        <h2 className="text-3xl font-bold text-white">Additional Resources</h2>
+                <div className="flex items-center mb-6">
+                    <AlertCircle className="w-8 h-8 text-light-orange mr-3"/>
+                    <h2 className="text-3xl font-bold text-white">Additional Resources</h2>
+                </div>
+
+                <div className="bg-orange-50 border-l-4 border-light-orange p-4 mb-6">
+                    <p className="text-orange-900 font-semibold">Please Note: We are not a homeless shelter.</p>
+                    <p className="text-orange-800 mt-2">If you are experiencing homelessness or seeking emergency
+                        shelter, please use the resources below.</p>
+                </div>
+
+                <div className="space-y-4">
+                    <div className="border-b pb-4">
+                        <h3 className="font-bold text-white mb-1">Massachusetts Substance Abuse Helpline</h3>
+                        <p className="text-off-white text-sm mb-2">Free, confidential information and referrals for
+                            those with alcohol and drug problems seeking help.</p>
+                        <a href="tel:+18003275050" className="text-white font-bold">Call
+                            (800) 327-5050</a>
                     </div>
 
-                    <div className="bg-orange-50 border-l-4 border-light-orange p-4 mb-6">
-                        <p className="text-orange-900 font-semibold">Please Note: We are not a homeless shelter.</p>
-                        <p className="text-orange-800 mt-2">If you are experiencing homelessness or seeking emergency
-                            shelter, please use the resources below.</p>
+                    <div className="border-b pb-4">
+                        <h3 className="font-bold text-white">Addiction Resource Website</h3>
+                        <p className="text-off-white text-sm">Resources for substance use disorders including signs,
+                            symptoms, levels of care, and self-assessment tools.</p>
                     </div>
 
-                    <div className="space-y-4">
-                        <div className="border-b pb-4">
-                            <h3 className="font-bold text-white mb-1">Massachusetts Substance Abuse Helpline</h3>
-                            <p className="text-off-white text-sm mb-2">Free, confidential information and referrals for
-                                those with alcohol and drug problems seeking help.</p>
-                            <a href="tel:+18003275050" className="text-white font-bold">Call
-                                (800) 327-5050</a>
-                        </div>
-
-                        <div className="border-b pb-4">
-                            <h3 className="font-bold text-white">Addiction Resource Website</h3>
-                            <p className="text-off-white text-sm">Resources for substance use disorders including signs,
-                                symptoms, levels of care, and self-assessment tools.</p>
-                        </div>
-
-                        <div className="border-b pb-4">
-                            <h3 className="font-bold text-white mb-1">SAMHSA (Substance Abuse and Mental Health
-                                Services Administration)</h3>
-                            <p className="text-off-white text-sm">Wealth of information, publications, data, resources,
-                                and treatment locator for your area.</p>
-                        </div>
-
-                        <div className="border-b pb-4">
-                            <h3 className="font-bold text-white mb-1">Stigma Free Worcester</h3>
-                            <p className="text-off-white text-sm">Smart phone app connecting users with substance use,
-                                mental health, food, and shelter services in Worcester. Developed by WPI students in
-                                collaboration with the City of Worcester.</p>
-                        </div>
-
-                        <div className="border-b pb-4">
-                            <h3 className="font-bold text-white mb-1">Make the Connection</h3>
-                            <p className="text-off-white text-sm">Connects Veterans, family members, and advocates with
-                                mental health information and inspiring stories of recovery at maketheconnection.net</p>
-                        </div>
-
-                        <div className="pb-4">
-                            <h3 className="font-bold text-white mb-1">Bureau of Substance Abuse Services (BSAS)</h3>
-                            <p className="text-off-white text-sm">Oversees statewide prevention, intervention, treatment,
-                                and recovery support services. Licenses programs, funds services, and tracks treatment
-                                trends.</p>
-                        </div>
+                    <div className="border-b pb-4">
+                        <h3 className="font-bold text-white mb-1">SAMHSA (Substance Abuse and Mental Health
+                            Services Administration)</h3>
+                        <p className="text-off-white text-sm">Wealth of information, publications, data, resources,
+                            and treatment locator for your area.</p>
                     </div>
 
-
-
-
-                    <div className="mt-6 bg-gray-50 rounded-lg p-4">
-                        <h4 className="font-semibold text-gray-800 mb-2">Homelessness Resources:</h4>
-                        <ul className="text-sm text-gray-700 space-y-1">
-                            <li>• National Coalition for the Homeless</li>
-                            <li>• Massachusetts Housing and Shelter Alliance</li>
-                            <li>• National Coalition for Homeless Veterans Resource Locator</li>
-                            <li>• HUD Resource Locator</li>
-                            <li>• National Law Center on Homelessness & Poverty</li>
-                            <li>• SMOC's Greater Worcester Housing Connection</li>
-                        </ul>
+                    <div className="border-b pb-4">
+                        <h3 className="font-bold text-white mb-1">Stigma Free Worcester</h3>
+                        <p className="text-off-white text-sm">Smart phone app connecting users with substance use,
+                            mental health, food, and shelter services in Worcester. Developed by WPI students in
+                            collaboration with the City of Worcester.</p>
                     </div>
+
+                    <div className="border-b pb-4">
+                        <h3 className="font-bold text-white mb-1">Make the Connection</h3>
+                        <p className="text-off-white text-sm">Connects Veterans, family members, and advocates with
+                            mental health information and inspiring stories of recovery at maketheconnection.net</p>
+                    </div>
+
+                    <div className="pb-4">
+                        <h3 className="font-bold text-white mb-1">Bureau of Substance Abuse Services (BSAS)</h3>
+                        <p className="text-off-white text-sm">Oversees statewide prevention, intervention, treatment,
+                            and recovery support services. Licenses programs, funds services, and tracks treatment
+                            trends.</p>
+                    </div>
+                </div>
+
+
+
+
+                <div className="mt-6 bg-gray-50 rounded-lg p-4">
+                    <h4 className="font-semibold text-gray-800 mb-2">Homelessness Resources:</h4>
+                    <ul className="text-sm text-gray-700 space-y-1">
+                        <li>• National Coalition for the Homeless</li>
+                        <li>• Massachusetts Housing and Shelter Alliance</li>
+                        <li>• National Coalition for Homeless Veterans Resource Locator</li>
+                        <li>• HUD Resource Locator</li>
+                        <li>• National Law Center on Homelessness & Poverty</li>
+                        <li>• SMOC's Greater Worcester Housing Connection</li>
+                    </ul>
+                </div>
             </div>
         </div>
     )

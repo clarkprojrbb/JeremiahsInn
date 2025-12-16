@@ -7,11 +7,12 @@ module.exports = {
       "./src/component/Contact.jsx",
       "./src/component/AboutUs.jsx",
       "./src/component/Donate.jsx",
-      "./src/component/Partner.jsx",
       "./src/component/Volunteer.jsx",
       "./src/component/Nutrition.jsx",
       "./src/component/Residential.jsx",
       "./src/component/Recovery.jsx",
+      "./src/component/Form.jsx",
+      "./src/component/VolunteerForm.jsx",
       "./public/index.html",
       "./App.js",
       "./index.js"

@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { Link } from "react-router-dom";
+import React from 'react';
 
 export const Footer = () => {
     return (
@@ -18,7 +17,7 @@ export const Footer = () => {
                 <div className="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
                     <div className="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
                         <img
-                            src="/logo_full_transparent.png"
+                            src="/logo_full_transparent.png" alt="logo"
                         />
                         <div>
                             <p className="font-semibold tracking-wide text-white">
