@@ -13,6 +13,7 @@ module.exports = {
         "./src/component/Residential.jsx",
         "./src/component/Recovery.jsx",
         "./src/component/Form.jsx",
+        "./src/component/VolunteerForm.jsx",
         "./public/index.html",
         "./App.js",
         "./index.js"

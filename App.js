@@ -9,6 +9,7 @@ import Residential from "./component/Residential"
 import Nutrition from "./component/Nutrition"
 import Recovery from "./component/Recovery"
 import Form from "./component/Form"
+import VolunteerForm from "./component/VolunteerForm"
 
 import {Routes, Route} from "react-router-dom";
 
@@ -27,6 +28,7 @@ function App() {
                     <Route path="/residential" element={<Residential/>}/>
                     <Route path="/nutrition" element={<Nutrition/>}/>
                     <Route path="/recovery" element={<Recovery/>}/>
+                    <Route path="volunteer-form" element={<VolunteerForm/>}/>
                 </Routes>
                 <Footer/>
             </div>
